@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>HTML5 Download Attribute Demo</title>
+<meta charset="utf-8">
+<meta name="description" content="Exploring the behavior of the HTML5 download attribute on hyperlinks">
+<meta name="author" content="Six Revisions">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700|Droid+Sans+Mono|Roboto:500" rel="stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="stylesheet">
+<link rel="icon" href="http://sixrevisions.com/favicon.ico" type="image/x-icon" />
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<nav class="nav">
+  <a href="http://sixrevisions.com/html5/download-attribute/">Read the guide</a>
+</nav>
+
+<div class="container">
+  <h1>HTML5 Download Attribute</h1>
+  <p class="subtitle">Exploring the behavior of the <code>download</code> attribute</p>
+  <h2>Default</h2>
+  <h3>Markup</h3>
+  <pre>&lt;a href=&quot;htmldoc.html&quot;&gt;</pre>
+  <p><a class="button" href="samp/htmldoc.html">Go to HTML Document</a></p>
+  <h2>Download Attribute</h2>
+  <h3>Markup</h3>
+  <pre>&lt;a href=&quot;htmldoc.html&quot; <span class="highlight">download</span>&gt;</pre></p>
+  <p><a class="button" href="samp/htmldoc.html" download>Download HTML Document</a></p>
+  <h2>Download Attribute &amp; Value</h2>
+  <h3>Markup</h3> 
+  <pre>&lt;a href=&quot;htmldoc.html&quot; <span class="highlight">download=&quot;sample-file.html&quot;</span>&gt;</pre>
+  <p><a class="button" href="samp/htmldoc.html" download="sample-file.html">Download HTML Document</a></p>
+</div>
+<!-- Not shown by default -->
+<div><noscript>JavaScript isn't enabled in your browser, which might cause this web page to behave strangely. The download links will still work.</noscript></div>
+<div id="overlay" class="hidden"></div>
+<div id="issue" class="hidden">
+  <div class="modal-content"></div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
